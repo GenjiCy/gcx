@@ -111,7 +111,7 @@ gcx/
 │   │   ├── infinity/         # Infinity HTTP query client
 │   │   ├── loki/             # Loki HTTP client (log + metric queries)
 │   │   ├── clickhouse/       # ClickHouse HTTP client
-│   │   ├── mssql/            # Microsoft SQL Server HTTP client (format:"table" string, TOP/EnforceTop, INFORMATION_SCHEMA helpers)
+│   │   ├── mssql/            # Microsoft SQL Server HTTP client
 │   │   ├── mysql/            # MySQL HTTP query client (raw SQL via unified query API)
 │   │   └── postgres/         # PostgreSQL HTTP query client (raw SQL via unified query API)
 │   ├── signals/              # Shared signal command and datasource-provider mounting (metrics/logs/traces/profiles)
