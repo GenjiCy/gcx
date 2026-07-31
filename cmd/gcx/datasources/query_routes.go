@@ -274,6 +274,9 @@ func dispatchMSSQL(ctx context.Context, req genericQueryRequest) (any, error) {
 		Start:  req.start,
 		End:    req.end,
 	}
+	if req.step > 0 {
+		mssqlReq.IntervalMs = req.step.Milliseconds()
+	}
 
 	resp, err := client.Query(ctx, req.uid, mssqlReq)
 	if err != nil {
